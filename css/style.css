@@ -62,4 +62,51 @@ header #check:checked ~ .overley {
   fill: #21272A;
 }
 
+.hero-section {
+  padding: 80px 0;
+  background: linear-gradient(239deg, #1CAEF8 -2.26%, #1C2792 96.93%);
+}
+.hero-section .row .col {
+  padding-left: 40px;
+  padding-right: 40px;
+}
+.hero-section .img-item img {
+  width: 100%;
+  display: block;
+}
+.hero-section .hero-item {
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+.hero-section .hero-item h1 {
+  font-size: 54px;
+  font-weight: 700;
+  color: #FFF;
+  line-height: 110%;
+  margin-bottom: 48px;
+}
+.hero-section .hero-item h1 .size-f {
+  font-size: 42px;
+}
+.hero-section .hero-item p {
+  font-size: 18px;
+  font-weight: 400;
+  color: #FFF;
+  line-height: 140%;
+  margin-bottom: 64px;
+}
+.hero-section .hero-item .main-link {
+  font-size: 20px;
+  font-weight: 400;
+  border-radius: 8px;
+  border: 2px solid #FDB614;
+  background: #FDB614;
+  height: 56px;
+  width: 172px;
+  color: #1E1E1E;
+  line-height: 100%;
+  letter-spacing: 0.5px;
+  transition: all linear 0.3s;
+}
+
 /*# sourceMappingURL=style.css.map */

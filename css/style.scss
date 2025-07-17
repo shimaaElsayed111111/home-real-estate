@@ -6,6 +6,10 @@ header, section, div, footer, ul, li, a, ol, dl, dd, dt {
 
 $CoolGray:#21272A;
 $primeryBlue:#1CAEF8;
+$blue:#1C2792;
+$white:#FFF;
+$yellow:#FDB614;
+$black:#1E1E1E;
 
 /* _____________________________HEADER_____________________________ */
 header{
@@ -38,7 +42,7 @@ header{
 
 header {
     .dropdown-content {
-        background: linear-gradient(239deg, #1CAEF8 -2.26%, #1C2792 96.93%);
+        background: linear-gradient(239deg, $primeryBlue -2.26%, $blue 96.93%);
         position: fixed;
         top: 0;
         right: -100%;
@@ -78,3 +82,74 @@ header #check:checked ~ .overley {
 .open-menu svg path{
     fill: $CoolGray;
 }
+
+
+// hero section
+.hero-section{
+    padding: 80px 0;
+    background: linear-gradient(239deg, $primeryBlue -2.26%, $blue 96.93%);
+
+    .row{
+        .col{
+            padding-left: 40px;
+            padding-right: 40px;
+        }
+    }
+
+    .img-item{
+        img{
+            width: 100%;
+            display: block;
+        }
+    }
+
+    .hero-item{
+        padding-top: 32px;
+        padding-bottom: 32px;
+
+        h1{
+            font: {
+                    size: 54px;
+                    weight: 700;
+                }
+
+            color:$white;
+            line-height: 110%;
+            .size-f{
+                font-size: 42px;
+            }
+
+            margin-bottom: 48px;
+        }
+
+        p {
+            font: {
+                size: 18px;
+                weight: 400;
+            }
+            color:$white;
+            line-height: 140%;
+            margin-bottom: 64px;
+        }
+
+        .main-link{
+            font: {
+                size: 20px;
+                weight: 400;
+            }
+            border-radius: 8px;
+            border: 2px solid $yellow;
+            background: $yellow;
+            height: 56px;
+            width: 172px;
+            color: $black;
+            line-height: 100%;
+            letter-spacing: 0.5px;
+            transition: all linear 0.3s;
+            
+        }
+
+    }
+}
+
+
