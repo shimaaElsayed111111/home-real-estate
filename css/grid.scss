@@ -1,0 +1,114 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+button {
+  background-color: transparent;
+  border: none;
+  display: flex;
+}
+
+.container {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 12px;
+  padding-right: 12px;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -12px;
+  margin-right: -12px;
+  padding: 0 12px;
+  row-gap: 24px;
+}
+
+.col-auto {
+  width: auto;
+  padding: 0 12px;
+}
+
+$screens: (
+    sm: 560px,
+    md: 780px,
+    lg: 980px,
+);
+
+@each $screen, $width in $screens {
+    @media screen and (min-width: $width) {
+        @for $col from 1 through 12 {
+            .col-#{$screen}-#{$col} {
+                padding-left: 12px;
+                padding-right: 12px;
+                width: calc(100% /12 * $col);
+            }
+        }
+    }
+}
+
+@for $col from 1 through 12 {
+    .col-#{$col} {
+        padding-left: 12px;
+        padding-right: 12px;
+        width: calc(100% /12 * $col);
+    }
+}
+
+.justify-content-between {
+  justify-content: space-between;
+}
+
+.justify-content-center {
+  justify-content: center;
+}
+
+.align-items-center {
+  align-items: center;
+}
+
+.d-flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.flex-direction-column {
+  flex-direction: column;
+}
+
+@media (max-width: 780px) {
+  .d-sm-none {
+    display: none;
+  }
+  .sm-justify-content-center {
+    justify-content: center;
+  }
+  .sm-align-items-center {
+    align-items: center;
+  }
+
+  .sm-wrap{
+    flex-wrap: wrap;
+  }
+
+  .sm-gap {
+    gap: 30px;
+  }
+  .sm-direction-column {
+    flex-direction: column;
+  }
+
+  .sm-position{
+    position: none;
+  }
+}
+@media (min-width: 780px) {
+  .d-md-none {
+    display: none;
+  }
+}
