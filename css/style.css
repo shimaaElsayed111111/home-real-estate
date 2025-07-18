@@ -83,7 +83,7 @@ header #check:checked ~ .overley {
   font-weight: 700;
   color: #FFF;
   line-height: 110%;
-  margin-bottom: 48px;
+  margin-bottom: 24px;
 }
 .hero-section .hero-item h1 .size-f {
   font-size: 42px;
@@ -93,7 +93,8 @@ header #check:checked ~ .overley {
   font-weight: 400;
   color: #FFF;
   line-height: 140%;
-  margin-bottom: 64px;
+  margin-bottom: 32px;
+  width: 600px;
 }
 .hero-section .hero-item .main-link {
   font-size: 20px;
@@ -107,6 +108,75 @@ header #check:checked ~ .overley {
   line-height: 100%;
   letter-spacing: 0.5px;
   transition: all linear 0.3s;
+}
+.hero-section .hero-item .main-link:hover {
+  transform: translateY(10px);
+}
+
+.case-section {
+  padding: 80px 0;
+  background-color: #FFF;
+}
+.case-section .main-item h2 {
+  font-size: 20px;
+  font-weight: 700;
+  color: #001D6C;
+  text-align: center;
+  line-height: 100%;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin-bottom: 5px;
+}
+.case-section .main-item p {
+  font-size: 42px;
+  font-weight: 700;
+  color: #21272A;
+  text-align: center;
+  line-height: 110%;
+  margin-bottom: 64px;
+}
+.case-section .item {
+  border-radius: 8px;
+  border: 1px solid #DDE1E6;
+  background: #FFF;
+  transition: all linear 0.3s;
+}
+.case-section .item:hover {
+  transform: scale(1.1);
+  background-color: #DDE1E6;
+}
+.case-section .item .img-item img {
+  display: block;
+  width: 100%;
+}
+.case-section .item .content {
+  padding: 16px;
+}
+.case-section .item .content h3 {
+  font-size: 20px;
+  font-weight: 700;
+  color: #21272A;
+  line-height: 110%;
+  margin-bottom: 16px;
+}
+.case-section .item .content p {
+  font-size: 16px;
+  font-weight: 400;
+  color: #21272A;
+  line-height: 140%;
+}
+.case-section .item .more-info {
+  padding: 16px;
+}
+.case-section .item .more-info a {
+  gap: 16px;
+}
+.case-section .item .more-info a p {
+  font-size: 20px;
+  font-weight: 500;
+  color: #1B45B4;
+  line-height: 100%;
+  letter-spacing: 0.5px;
 }
 
 /*# sourceMappingURL=style.css.map */

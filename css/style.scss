@@ -10,6 +10,9 @@ $blue:#1C2792;
 $white:#FFF;
 $yellow:#FDB614;
 $black:#1E1E1E;
+$primary1:#001D6C;
+$CoolGray-20:#DDE1E6;
+$whiteblue:#1B45B4;
 
 /* _____________________________HEADER_____________________________ */
 header{
@@ -119,7 +122,7 @@ header #check:checked ~ .overley {
                 font-size: 42px;
             }
 
-            margin-bottom: 48px;
+            margin-bottom: 24px;
         }
 
         p {
@@ -129,7 +132,8 @@ header #check:checked ~ .overley {
             }
             color:$white;
             line-height: 140%;
-            margin-bottom: 64px;
+            margin-bottom: 32px;
+            width: 600px;
         }
 
         .main-link{
@@ -147,8 +151,103 @@ header #check:checked ~ .overley {
             letter-spacing: 0.5px;
             transition: all linear 0.3s;
             
+            &:hover{
+                transform: translateY(10px);
+            }
         }
 
+    }
+}
+
+// case section
+.case-section{
+    padding: 80px 0;
+    background-color: $white;
+
+    .main-item{
+        h2{
+            font: {
+                size: 20px;
+                weight: 700;
+            }
+            color: $primary1;
+            text-align: center;
+            line-height: 100%;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            margin-bottom: 5px;
+        }
+
+        p{
+            font: {
+                size: 42px;
+                weight: 700;
+            }
+            color: $CoolGray;
+            text-align: center;
+            line-height: 110%;
+            margin-bottom: 64px;
+        }
+    }
+
+    .item{
+        border-radius: 8px;
+        border: 1px solid $CoolGray-20;
+        background: $white;
+        transition: all linear 0.3s;
+
+        &:hover{
+            transform: scale(1.1);
+            background-color: $CoolGray-20;
+        }
+
+        .img-item img{
+            display: block;
+            width: 100%;
+        }
+
+        .content{
+            padding: 16px;
+
+            h3{
+                font: {
+                    size: 20px;
+                    weight: 700;
+                }
+
+                color: $CoolGray;
+                line-height: 110%;
+                margin-bottom: 16px;
+            }
+
+            p{
+                font: {
+                    size: 16px;
+                    weight: 400;
+                }
+
+                color:$CoolGray;
+                line-height: 140%;
+            }
+        }
+
+        .more-info{
+            padding: 16px;
+            a{
+                gap: 16px;
+
+                p{
+                    font: {
+                        size: 20px;
+                        weight: 500;
+                    }
+
+                    color: $whiteblue;
+                    line-height: 100%;
+                    letter-spacing: 0.5px;
+                }
+            }
+        }
     }
 }
 
