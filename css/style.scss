@@ -14,9 +14,14 @@ $primary1:#001D6C;
 $CoolGray-20:#DDE1E6;
 $whiteblue:#1B45B4;
 
-/* _____________________________HEADER_____________________________ */
+// header
 header{
     padding: 16px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: $white;
 }
 
 header{
@@ -89,6 +94,7 @@ header #check:checked ~ .overley {
 
 // hero section
 .hero-section{
+    margin-top: 80px;
     padding: 80px 0;
     background: linear-gradient(239deg, $primeryBlue -2.26%, $blue 96.93%);
 
